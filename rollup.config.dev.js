@@ -11,7 +11,7 @@ import { ignoreSelectFiles } from './elements/ignore/select';
 import { ignoreSwitchFiles } from './elements/ignore/switch';
 
 export default {
-  input: 'src/weather-radar-card.ts',
+  input: 'src/weather-radar-card2.ts',
   output: {
     dir: './dist',
     format: 'es',
