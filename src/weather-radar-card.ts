@@ -20,7 +20,7 @@ console.info(
 (window as any).customCards = (window as any).customCards || [];
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 (window as any).customCards.push({
-  type: 'weather-radar-card',
+  type: 'weather-radar-card2',
   name: 'Weather Radar Card',
   description: 'A rain radar card using the new tiled images from RainViewer',
 });
