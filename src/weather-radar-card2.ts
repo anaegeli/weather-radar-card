@@ -122,7 +122,7 @@ export class WeatherRadarCard extends LitElement implements LovelaceCard {
               <img id="img-color-bar" height="8" style="vertical-align: top" />
             </div>
             <div id="mapid" style="height: ${this._config.frameheight !== undefined
-        ? this._config.framheight : this.isPanel
+        ? this._config.frameheight : this.isPanel
           ? this.offsetParent
             ? this.offsetParent.clientHeight - 48 - 2 - (this.editMode === true ? 59 : 0) + `px`
             : `540px`
@@ -591,7 +591,7 @@ export class WeatherRadarCard extends LitElement implements LovelaceCard {
           this.document.getElementById("img-color-bar").width = this.frameElement.offsetWidth;
           this.document.getElementById("mapid").width = this.frameElement.offsetWidth;
           this.document.getElementById("mapid").height = ${this._config.frameheight !== undefined
-        ? this._config.framheight : this.isPanel
+        ? this._config.frameheight : this.isPanel
           ? this.offsetParent
             ? this.offsetParent.clientHeight - 48 - 2 - (this.editMode === true ? 59 : 0)
             : 492
