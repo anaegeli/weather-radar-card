@@ -4,7 +4,7 @@ import { HomeAssistant, LovelaceCardEditor, LovelaceCard } from 'custom-card-hel
 
 import './editor';
 
-import { WeatherRadarCardConfig } from './types';
+import { WeatherRadarCard2Config } from './types';
 import { CARD_VERSION } from './const';
 
 import { localize } from './localize/localize';
