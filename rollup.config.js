@@ -38,7 +38,7 @@ const plugins = [
 
 export default [
   {
-    input: 'src/weather-radar-card.ts',
+    input: 'src/weather-radar-card2.ts',
     output: {
       dir: 'dist',
       format: 'es',
