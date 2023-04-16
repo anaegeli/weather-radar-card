@@ -11,7 +11,7 @@ import { localize } from './localize/localize';
 
 /* eslint no-console: 0 */
 console.info(
-  `%c  WEATHER-RADAR-CARD \n%c  ${localize('common.version')} ${CARD_VERSION}    `,
+  `%c  WEATHER-RADAR-CARD2 \n%c  ${localize('common.version')} ${CARD_VERSION}    `,
   'color: orange; font-weight: bold; background: black',
   'color: white; font-weight: bold; background: dimgray',
 );
@@ -21,15 +21,15 @@ console.info(
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 (window as any).customCards.push({
   type: 'weather-radar-card2',
-  name: 'Weather Radar Card',
+  name: 'Weather Radar Card2',
   description: 'A rain radar card using the new tiled images from RainViewer',
 });
 
 // TODO Name your custom element
-@customElement('weather-radar-card')
+@customElement('weather-radar-card2')
 export class WeatherRadarCard extends LitElement implements LovelaceCard {
   public static async getConfigElement(): Promise<LovelaceCardEditor> {
-    return document.createElement('weather-radar-card-editor') as LovelaceCardEditor;
+    return document.createElement('weather-radar-card2-editor') as LovelaceCardEditor;
   }
 
   public static getStubConfig(): Record<string, unknown> {
