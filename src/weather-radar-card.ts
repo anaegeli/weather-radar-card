@@ -121,15 +121,16 @@ export class WeatherRadarCard extends LitElement implements LovelaceCard {
             <div id="color-bar" style="height: 8px;">
               <img id="img-color-bar" height="8" style="vertical-align: top" />
             </div>
-            <div id="mapid" style="height: ${this.isPanel
-        ? this.offsetParent
-          ? this.offsetParent.clientHeight - 48 - 2 - (this.editMode === true ? 59 : 0) + `px`
-          : `540px`
-        : this._config.square_map !== undefined
-          ? this._config.square_map
-            ? this.getBoundingClientRect().width + 'px'
+            <div id="mapid" style="height: ${this._config.frameheight !== undefined
+        ? this._config.framheight : this.isPanel
+          ? this.offsetParent
+            ? this.offsetParent.clientHeight - 48 - 2 - (this.editMode === true ? 59 : 0) + `px`
+            : `540px`
+          : this._config.square_map !== undefined
+            ? this._config.square_map
+              ? this.getBoundingClientRect().width + 'px'
+              : '492px'
             : '492px'
-          : '492px'
       };"></div>
             <div id="div-progress-bar" style="height: 8px; background-color: white;">
               <div id="progress-bar" style="height:8px;width:0; background-color: #ccf2ff;"></div>
