@@ -11,7 +11,7 @@ import { switchDefinition } from '../elements/switch';
 import { textfieldDefinition } from '../elements/textfield';
 import { sliderDefinition } from '../elements/slider';
 
-@customElement('weather-radar-card-editor')
+@customElement('weather-radar-card2-editor')
 export class WeatherRadarCardEditor extends ScopedRegistryHost(LitElement) implements LovelaceCardEditor {
   @property({ attribute: false }) public hass?: HomeAssistant;
 
