@@ -1,4 +1,4 @@
-# Weather Radar Card
+# Weather Radar Card2
 
 A Home Assistant rain radar card using the tiled images from RainViewer
 
