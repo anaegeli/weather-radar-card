@@ -139,6 +139,12 @@ export class WeatherRadarCardEditor extends ScopedRegistryHost(LitElement) imple
             .configValue=${'marker_longitude'}
             @input=${this._valueChangedNumber}
         ></mwc-textfield>
+        <mwc-textfield
+            label="Frame Height (if empty auto, px, fr, em, %)"
+            .value=${config.frameheight ? config.frameheight : ''}
+            .configValue=${'frameheight'}
+            @input=${this._valueChangedNumber}
+        ></mwc-textfield>
         <div class="side-by-side">
           <mwc-textfield
               label="Frame Count (optional)"
