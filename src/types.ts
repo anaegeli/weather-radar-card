@@ -1,7 +1,7 @@
 import { LovelaceCardConfig } from 'custom-card-helpers';
 
 // TODO Add your configuration elements here for type-checking
-export interface WeatherRadarCardConfig extends LovelaceCardConfig {
+export interface WeatherRadarCard2Config extends LovelaceCardConfig {
   show_range: boolean;
   show_marker: boolean;
   show_scale: boolean;
