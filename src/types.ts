@@ -25,5 +25,5 @@ export interface WeatherRadarCardConfig extends LovelaceCardConfig {
   show_error?: boolean;
   test_gui?: boolean;
   show_header_toggle?: boolean;
-  height: undefined;
+  frameheight: undefined;
 }
