@@ -589,16 +589,17 @@ export class WeatherRadarCard extends LitElement implements LovelaceCard {
           this.document.getElementById("color-bar").width = this.frameElement.offsetWidth;
           this.document.getElementById("img-color-bar").width = this.frameElement.offsetWidth;
           this.document.getElementById("mapid").width = this.frameElement.offsetWidth;
-          this.document.getElementById("mapid").height = ${this.isPanel
-        ? this.offsetParent
-          ? this.offsetParent.clientHeight - 48 - 2 - (this.editMode === true ? 59 : 0)
-          : 492
-        : this._config.square_map !== undefined
-          ? this._config.square_map
-            ? this.getBoundingClientRect().width
+          this.document.getElementById("mapid").height = ${this._config.frameheight !== undefined
+        ? this._config.framheight : this.isPanel
+          ? this.offsetParent
+            ? this.offsetParent.clientHeight - 48 - 2 - (this.editMode === true ? 59 : 0)
             : 492
-          : 492
-      }
+          : this._config.square_map !== undefined
+            ? this._config.square_map
+              ? this.getBoundingClientRect().width
+              : 492
+            : 492
+        }
           this.document.getElementById("div-progress-bar").width = this.frameElement.offsetWidth;
           this.document.getElementById("bottom-container").width = this.frameElement.offsetWidth;
           barSize = this.frameElement.offsetWidth/frameCount;
