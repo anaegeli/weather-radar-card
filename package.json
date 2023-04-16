@@ -10,7 +10,7 @@
     "lovelace",
     "custom-cards"
   ],
-  "module": "weather-radar-card.js",
+  "module": "weather-radar-card2.js",
   "repository": "git@github.com:anaegeli/weather-radar-card2.git",
   "author": "Simon Ratcliffe <simon@makin-things.com>",
   "license": "MIT",
